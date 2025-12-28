@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XProfile - My Virtual Profile Card</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../assets/background.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-box{
+    height:430px;
+    width:420px;
+    background-color: #ff574a;
+    color: #fff;
+    font-size: 16PX;
+    border-radius: 20px;
+    padding: 40px 90px;
+    text-align: center;
+   
+    
+}
+
+.top-icons{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.menu-icon,
+.setting-icon {
+  width: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    padding: 6px;
+    background-color: #fff;
+    margin: 10px;
+
+}
+
+.social-media{
+    margin-top: 30px;
+}
+.social-media img {
+    width: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+    </style>
+     
+</head>
+<body>
+    <div class="profile-box">
+        <div class="top-icons">
+            <img src="./assets/menu.png" class="setting-icon" />
+            <img src="./assets/setting.png" class="menu-icon" />
+            
+        </div>
+        
+    
+        <img src="./assets/profile-pic.png" alt="profile" class="profile-pic" />
+
+        <h3>Learner Beaver</h3>
+
+        <p>Frontend Dev at CrioDo, Bengaluru</p>
+
+        <div class="social-media">
+            <img src="./assets/instagram.png" />
+            <img src="./assets/telegram.png" />
+            <img src="./assets/dribble.png" />
+
+        </div>
+    </div>
+</body>
+</html>

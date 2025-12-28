@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XCruise</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        @media (min-width: 768px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+    .cards{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Tablet: 480px to 768px */
+@media (max-width: 768px) and (min-width: 480px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+    .hero button {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+    .discover {
+        padding: 30px;
+    }
+    .heading h2 {
+        font-size: 28px;
+    }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_box {
+        width: 80%;
+    }
+    .footer_container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer_col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social-icons img {
+        width: 26px;
+    }
+   
+}
+
+/* Mobile: Less than 480px */
+   @media (max-width: 480px) {
+    .hero {
+        padding: 10px;
+        
+    }
+    .hero h1 {
+        font-size: 24px;
+    }
+    .hero button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+    .discover {
+        padding: 20px;
+    }
+
+    .popular {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pills {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .pill {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pill img {
+        width: 180px;
+        height: 50px;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .contact_box {
+        width: 100%;
+    }
+
+    #contact h3 {
+        font-size: 22px;
+    }
+    .footer_container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_col h4 {
+        font-size: 18px;
+    }
+
+    .footer_col p {
+        font-size: 15px;
+    }
+
+    .social-icons img {
+        width: 30px;
+    }
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.navbar {
+    background-color: rgb(0, 0, 51);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.hero{
+    background-image: url(https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/hero-cruise.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+
+}
+.hero h1 {
+    font-size: 40px;
+    max-width: 800px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.discover {
+    padding: 40px 60px;
+    font-family: Arial, sans-serif;
+}
+
+
+.heading h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    color: #444;
+    margin-bottom: 25px;
+}
+.popular {
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.popular-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+.pills {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.pill {
+    text-align: center;
+    gap:10px;
+    background: #fff;
+    border-radius: 50px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 
+      rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.pill img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    border-radius: 17.5px;
+    text-align: center;
+}
+.pill span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    white-space: nowrap;       
+}
+.Banner{
+    position: relative;
+    margin-top: 20px;
+
+}
+.Banner img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.banner-text{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    color: white;
+
+}
+.banner-text h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.banner-text p {
+    font-size: 13px;
+    opacity: 0.9;
+}
+.cards{
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+}
+.card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.save-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 26px;
+}
+
+
+.card-text {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    color: white;
+}
+
+.card-text h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.card-text p {
+    font-size: 13px;
+    opacity: 0.9;
+}
+.save-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 26px;
+}
+
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+#contact h3::after {
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: orange;
+    position: absolute;
+    left: 20%;
+    bottom: -5px;
+}
+
+
+.contact_info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact_box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 45%;
+    background: white;
+}
+
+.contact_box h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact_box p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+footer {
+    background-color: #020b33;
+    color: white;
+    padding: 40px 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+
+.footer_col h4 {
+    color: orange;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer_col p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+.social-icons img {
+    width: 22px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+
+.footer_rights {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 13px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/xCruise-logo.png">
+
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Destinations</a>
+            <a href="#">Deals</a>
+        </div>
+
+    </nav>
+    <section class="hero">
+        <h1>DISCOVER THE BEAUTY OF CRUISING WITH US</h1>
+        <button>Book Now</button>
+    </section>
+    <section class="discover">
+        <div class="heading">
+
+            <h2>DISCOVER OUR DESTINATIONS</h2>
+    
+            <p>
+                Sail to crystal-clear seas, historical sites, and boundless nature.
+                Discover a greater beauty with xCruise.
+            </p>
+    
+            <div class="popular">
+                <span class="popular-title">Popular: </span>
+    
+                <div class="pills">
+    
+                    <div class="pill">
+                        <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/weekend-cruises-pill.png" alt="Weekend Cruises">
+                        <span>Weekend Cruises</span>
+                    </div>
+    
+                    <div class="pill">
+                        <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/summer-cruises-pill.png" alt="Summer Cruises">
+                        <span>Summer Cruises</span>
+                    </div>
+    
+                    <div class="pill">
+                        <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/exotic-cruises-pill.png" alt="Exotic Cruises">
+                        <span>Exotic Cruises</span>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+        <div class="Banner">
+            <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/caribbean-cruise.png" alt="Caribbean & The Bahamas">
+            <!-- <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/save-icon.png" class="save-icon"> -->
+            <div class="banner-text">
+                <h2>CARIBBEAN & THE BAHAMAS</h2>
+                <P>Crystal-clear waters and tropical vibes</P>
+
+            </div>
+        </div>
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/mediterranean-cruise.png" alt="Mediterranean">
+                <!-- <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/save-icon.png" class="save-icon"> -->
+                <div class="card-text">
+                    <h3>Mediterranean</h3>
+                    <p>Ancient cultures and stunning coastlines</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/dubai-cruise.png" alt="Dubai & Abu Dhabi">
+                <div class="card-text">
+                    <h3>Dubai & Abu Dhabi</h3>
+                    <p>Modern skyscrapers and vibrant nightlife</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/northern-europe-cruise.png" alt="Northern Europe">
+                <div class="card-text">
+                    <h3>Northern Europe</h3>
+                    <p>Fascinating nature and picturesque sights</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/redsea-cruise.png" alt="Red Sea">
+                <div class="card-text">
+                    <h3>Red Sea</h3>
+                    <p>White-sand beaches and sun-kissed waters</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/bermuda-beach-cruise.png" alt="Bermuda">
+                <div class="card-text">
+                    <h3>Bermuda</h3>
+                    <p>Discover pink-sand beaches</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/south-africa-cruise.png" alt="South Africa">
+                <div class="card-text">
+                    <h3>South Africa</h3>
+                    <p>Lush natural settings and exotic wildlife</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/south-america-cruise.png" alt="South America">
+                <div class="card-text">
+                    <h3>South America</h3>
+                    <p>A blend of culture and ancient mystique</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/asia-cruise.png" alt="Asia">
+                <div class="card-text">
+                    <h3>Asia</h3>
+                    <p>Land of sunrises and exotic landscapes</p>
+                </div>
+            </div>
+        
+        </div>
+        
+    </section>
+    <section id="contact">
+        <h3>Contact Us</h3>
+    
+        <div class="contact_info">
+    
+      
+            <div class="contact_box">
+                <h4>Contact Information</h4>
+                <p>6750 N. Andrews Avenue Suite 100 Fort Lauderdale, FL 33309</p>
+                <p>Call Us: +62-813 346 100</p>
+            </div>
+    
+       
+            <div class="contact_box">
+                <h4>Hours of Operation</h4>
+                <p>Mon-Fri: 8:00 am - 11:00 pm EST</p>
+                <p>Sat-Sun: 9:00 am - 9:00 pm EST</p>
+            </div>
+    
+        </div>
+    </section>
+
+    <footer id="footer">
+
+        <div class="footer_container">
+    
+            <div class="footer_col">
+                <h4>TOP DESTINATIONS</h4>
+                <p>New York City</p>
+                <p>Paris</p>
+                <p>Italy</p>
+                <p>Costa Rica</p>
+                <p>Japan</p>
+                <p>USA</p>
+                <p>Amsterdam</p>
+            </div>
+    
+            <div class="footer_col">
+                <h4>TRAVEL INTERESTS</h4>
+                <p>Adventure Travel</p>
+                <p>Beaches, Coasts and Islands</p>
+                <p>Family Holidays</p>
+            </div>
+            <div class="footer_col">
+                <h4>ABOUT US</h4>
+                <p>About xCruise</p>
+                <p>Contact Us</p>
+                <p>Privacy Policy</p>
+                <p>Work For Us</p>
+                <p>Sitemap</p>
+            </div>
+    
+            <div class="footer_col">
+                <h4>XCRUISE</h4>
+                <p>For Explorers Everywhere</p>
+    
+                <h4>FOLLOW US</h4>
+                <div class="social-icons">
+                    <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/instagram-icon.png" alt="Instagram">
+                    <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/facebook-icon.png" alt="Facebook">
+                    <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/youtube-icon.png" alt="YouTube">
+                    <img src="https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/gmail-icon.png" alt="Gmail">
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="footer_rights">
+            © 2024 xCruise In. All rights reserved
+        </div>
+    
+    </footer>
+    
+    
+  
+        
+    
+</body>
+</html>

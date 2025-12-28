@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Form Handling</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Account Singnup</h1>
+            <p class="subtitle">An Interactive form Validation-zero JavaScript,pure CSS</p>
+            <form class="validation-form" action="#success" method="GET">
+                    <!--Name Input Field-->
+                <div class="input-group">
+                    <label for="name">Full Name<span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your Full Name" required minlength="3" pattern="[A-Z][A-Za-z\s]{2,}" />
+                    <div class="error-massage">
+                        Please enter a valid name (first letter need to be capital, letters only, minimum 2 letters required)
+                    </div>
+                </div>   
+                    <!--Email Input Field-->
+                <div class="input-group">
+                    <label for="email">Email Address<span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Please enter a valid email address" required pattern="^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$" />
+                    <div class="error-message">Please enter a valid email address</div>
+                </div>   
+
+                    <!--Phone Number Input Field-->
+                <div class="input-group">
+                    <label for="phone">Phone Number<span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="Please enter a valid phone number" required pattern="^\+?[0-9\s\-\(\)]{10,}$" />
+                    <div class="error-message">Please enter a valid phone number</div>
+                </div>
+
+                    <!--Password Input Field-->
+                <div class="input-group">
+                    <label for="password">Password<span class="required">*</span></label>
+                    <input type="password" id="password" name="password" placeholder="Create a strong password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" />
+                    <div class="error-message">
+                        Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character.
+                    </div>
+                </div>
+
+                    <!--Terms and Conditions Checkbox-->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required />
+                    <label for="terms">I agree to the <a href="#">Terms & Conditions</a><span class="required">*</span></label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-button">Create Account</button>
+            </form>
+
+            <div class="success-popup" id="success">
+                <div class="popup-content">
+                    <h2>🎉 Account Created Successfully!</h2>
+                    <p>Welcome! Your account has been created and you're ready to get started.</p>
+                    <a href="./FormHandling.html" class="close-btn">Create Another Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

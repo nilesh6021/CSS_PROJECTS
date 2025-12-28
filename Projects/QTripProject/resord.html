@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>QTrip Adventure Detail</title>
+   <link rel="stylesheet" href="../../../css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    /* Rounded image corners */
+.rounded-img {
+  border-radius: 8px;
+}
+
+/* Dim effect on hover */
+.hover-dim {
+  transition: 0.3s ease;
+}
+
+.hover-dim:hover {
+  filter: brightness(70%);
+}
+
+/* Border + rounded corners for entire sections */
+.section-box {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Qtrip</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Explore</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+   <!-- TODO: MODULE_ADVENTURE_DETAILS -->
+   <!-- 1. Copy navigation bar HTML from Landing page document -->
+
+   <!-- <div class="container">
+      <div class="content">
+        
+         
+
+      </div>
+   </div> -->
+   <div class="container my-5">
+
+    <div class="row">
+  
+      <!-- LEFT CONTENT AREA -->
+      <div class="col-lg-8 col-12">
+  
+        <div class="p-3 border rounded section-box">
+  
+          <!-- IMAGES -->
+          <div class="row">
+  
+            <!-- Large image -->
+            <div class="col-lg-8 col-12 mb-3">
+              <img src="/assets/adventures/resort/resort1.jpg"
+                   class="img-fluid main-img rounded-img hover-dim">
+            </div>
+  
+            <!-- Small images (lg only) -->
+            <div class="col-lg-4 d-none d-lg-block">
+  
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <img src="/assets/adventures/resort/resort2.jpg"
+                       class="img-fluid rounded-img hover-dim">
+                </div>
+  
+                <div class="col-12">
+                  <img src="/assets/adventures/resort/resort3.jpg"
+                       class="img-fluid rounded-img hover-dim">
+                </div>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <!-- Header and caption -->
+          <h2 class="mt-4">Resort Adventure</h2>
+          <p class="text-muted">Enjoy luxury stay and activities</p>
+  
+          <hr />
+  
+          <!-- Details section -->
+          <div class="adventure-details">
+            <p>
+              This resort offers world-class amenities, adventure activities,
+              relaxing spa treatments and much more. Perfect for a weekend getaway
+              with friends or family.
+            </p>
+  
+            <p>
+              You can enjoy kayaking, hiking trails, nature walks, swimming pools,
+              indoor games, outdoor sports, and delicious cuisine.
+            </p>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      <!-- SOLD OUT SECTION -->
+      <div class="col-lg-4 col-12 mt-4 mt-lg-0">
+        <div class="p-4 border rounded section-box text-center bg-light">
+          <h3 class="text-danger">Sold Out</h3>
+          <p>This adventure is currently unavailable.</p>
+        </div>
+      </div>
+  
+    </div>
+  
+  </div>
+  
+   <footer>
+      <div class="container">© QTrip 2020</div>
+   </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</body>
+
+</html>

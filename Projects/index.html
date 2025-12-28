@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WITH OUT JS ONLY CSS HTML</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_image/fav0.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_image/fav0.png">
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin:0;
+            padding-top: 50px;
+            box-sizing: border-box;
+            min-height: 100vh;
+            font-size: 16px;
+            padding-bottom: 60px;
+            background-color: #ffffff;
+            color: #000000;
+
+        }
+        #pageSection{
+            max-width:1200px;
+            width: 95%;
+            border: 5px solid #23aa04;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+        }
+        #pages td, #pages th{
+            padding: 12px;
+            vertical-align: top;
+        }
+        #pages td:first-child{
+            width:25%;
+            min-width:120px;
+            font-weight: bold;
+            color: #04aa64;
+        }
+        #pages tr:nth-child(even){
+            background-color: rgba(189,255,189,0.3);
+        }
+         #pages tr:nth-child(odd){
+            background-color: rgba(189,255,189,0.15);
+        }
+        #pages th{  
+            text-align: left;
+            background-color: #04aa6d;
+            color: white;
+            font-size: 16px;        
+        }
+        .pageUrl {
+            display: flex;
+            flex-wrap: wrap;
+            gap:10px;
+        }
+        .pageUrl a{
+            display: inline-flex;
+            text-transform: capitalize;
+            font-size: 15px;
+            padding: 8px 14px;
+            font-family: Verdana;
+            color: #04aa6d;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.2s, color 0.2s;
+            border: 1px solid #04aa6d;
+        }
+        .pageUrl a:hover{
+            background-color: #04aa6d;
+            color: white;
+        }
+        header{
+            margin-bottom: 30px;
+        }
+        h1{
+            font-size: 2rem;
+            color:#04aa6d;
+            margin-bottom: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: #242424;
+        }
+        .button_java{
+            display: inline-flex;
+            align-items: center;
+            gap:10px;
+            padding: 10px 20px;
+            background-color: #04aa6d;
+            border-radius: 10px;
+            border: 2px solid #000;
+        }
+        .button_java h1{
+            margin: 0;
+            font-size: 1.8rem;
+            color: white;
+        }
+        .button_java a{
+            display: flex;
+            align-items: center;
+            gap:10px;
+            color:white;
+            text-decoration: none;
+        }
+        .java_pic{
+            width:2rem;
+            height:auto;
+        }
+        .description {
+        font-size: 1.1rem;
+        color: #333;
+        margin-top: 15px;
+      }
+
+      .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+      }
+       @media (max-width: 768px) {
+        #pages {
+          border-collapse: separate;
+          border-spacing: 0;
+        }
+
+        #pages tr {
+          display: block;
+          margin-bottom: 1.5rem;
+          border: 1px solid #04aa6d;
+          border-radius: 10px;
+          overflow: hidden;
+          background-color: rgba(189, 255, 189, 0.15);
+        }
+
+        #pages th {
+          display: none;
+        }
+
+        #pages td {
+          display: block;
+          width: 100%;
+          padding: 10px 0px 10px 0px;
+          text-align: center;
+        }
+
+        #pages td:first-child {
+          width: 100%;
+          background-color: #04aa6d;
+          color: white;
+          font-size: 1.1rem;
+          font-weight: bold;
+          text-align: center;
+          padding: 12px 0;
+          border-bottom: 1px solid #fff;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+
+        .pageUrl {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 12px;
+          padding: 15px 10px 20px 10px;
+        }
+
+        .pageUrl a {
+          flex: 1 1 45%;
+          text-align: center;
+          border: 1px solid #04aa6d;
+          border-radius: 8px;
+          padding: 8px 10px;
+          font-size: 0.75rem;
+          color: #04aa6d;
+          box-sizing: border-box;
+        }
+
+        .pageUrl a:hover {
+          background-color: #04aa6d;
+          color: white;
+        }
+
+        .description {
+          font-size: 1rem;
+          padding: 0 10px;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        #pageSection {
+          padding: 15px;
+        }
+      }
+
+    </style>
+</head>
+<body>
+    <section id="pageSection">
+        <header>
+            <div class="button_java">  
+                <a href="https://github.com/you-dont-need/You-Dont-Need-JavaScript">
+                <h1>You Dont Need JavaScript</h1>
+                <img src="../images/java-script.png" alt="java" class="java_pic"> </a>
+            </div>
+            <p class="description">
+             Explore the power of pure CSS with our collection of interactive demos
+             and examples.No JavaScript required!
+            </p>
+        </header>
+        <table id="pages">
+            <tbody>
+                <tr>
+                    <th>Category</th>
+                    <th>Project</th>
+                </tr>
+                <!-- <tr>
+                    <td>3D &amp; Animations</td>
+                    <td class="pageUrl">
+                        <a href="./3D Rotation Square/animation.html">3D Rotation Square</a>
+                        <a href="./3D transform/index.html">3D Transform</a>
+                        <a href="./3d_virtual_keyboard/index.html">3D Virtual Keyboard</a>
+                        <a href="./3D Rotating Cube/index.html">3D Rotating Cube</a>
+                        <a href="./3D transform/index.html">3D Transform</a>
+                        <a href="./3D card flip animation/index.html">3D Card Flip Animation</a>
+                        <a href="./Baby Yoda Animation/index.html">Baby Yoda Animation</a>
+                        <a href="./Advanced Dancing Animation-tutorial/Advanced Dancing Animation.html">Advanced Dancing Animation</a>
+                        <a href="./Blinking Card/index.html">Rotating Card</a>
+                        <a href="./Animated_Iphone_design/animatedipne.html">Animated iPhone</a>
+                        <a href="./Book Animation/index.html">Book Animation</a>
+                        <a href="./DVD Screen Saver/index.html">DVD Screen Saver</a>
+                        <a href="./Jumping Ball/index.html">Jumping Ball</a>
+                        <a href="./leaf-anim/leaf.html">Leaf Animation</a>
+                        <a href="./Light Bulb Animation/bulb.html">Light Bulb Animation</a>
+                        <a href="./Newtons Cradle/newtons-cradle.html">Newton’s Cradle</a>
+                        <a href="./Pendulum/index.html">Pendulum</a>
+                        <a href="./ScaryAnimation/scary.html">Scary Animation</a>
+                        <a href="./Shuffling squares/shuffling.html">Shuffling Squares</a>
+                        <a href="./Square Animation/index.html">Square Animation</a>
+                        <a href="./Square_Rotation_Animation/squareAnimation.html">Square Rotation Animation</a>
+                        <a href="./Radial Color Pulsar/index.html">Radial Color Pulsar</a>
+                        <a href="./Coffee Machine Animation/index.html">Coffee Machine</a>
+                        <a href="./Flowers/index.html">Flowers</a>
+                        <a href="./animations/Candles/index.html">Candles</a>
+                        <a href="./CodePenAnimation/index.html">Windmill</a>
+                        <a href="./misc/fire.html">Fire Animation</a>
+                        <a href="./misc/Tubelight.html">Tubelight Effect Animation</a>
+                        <a href="./3D Earth/index.html">3D Earth</a>
+                        <a href="./Animated Slider/index.html">Animated Slider</a>
+                        <a href="./Animated-Text/index.html">Animated Text</a>
+                        <a href="./Text Change Animation/index.html">Text Change Animation</a>
+                        <a href="./Jarvis/index.html">Jarvis</a>
+                        <a href="./Terminal Animation/index.html">Terminal Animation</a>
+                    </td>
+                </tr> -->
+                <tr>
+                    <td>Forms & Inputs</td>
+                    <td class="pageUrl">
+                        <a href="../Projects/CSS Form Handling/FormHandling.html">CSS Form Handling</a>
+                       
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pageUrl"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pageUrl"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pageUrl"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pageUrl"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pageUrl"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pageUrl"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pageUrl"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pageUrl"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pageUrl"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pageUrl"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pageUrl"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

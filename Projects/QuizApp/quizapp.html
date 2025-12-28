@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, 
+        #4f6df5, 
+        #9b59b6, 
+        #ff6b8a
+    );
+}
+
+.quiz-container{
+    background: white;
+    padding: 25px;
+    width: 500px;
+    /* height: 300px; */
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.quiz-container h1 {
+    margin-bottom: 15px;
+}
+#question {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#answer-list {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 15px;
+    padding-left: 50px;
+}
+#answer-list li{
+    padding: 10px;
+    cursor: pointer;
+}
+
+#answer-list li:hover {
+    background-color: rgb(245, 245, 245);
+}
+.correct {
+    background-color: rgb(144, 238, 144);
+}
+button {
+    padding: 6px 14px;
+    border: 1px solid #999;
+    background: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+#submit:hover{
+    background-color: rgb(151, 228, 173);
+}
+#next {
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz App</h1>
+        <p id="question"></p>
+        <ul id="answer-list">
+            <!-- Answer options will be injected here -->
+        </ul>
+        <button id="submit">Submit</button>
+        <button id="next">Next</button>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
