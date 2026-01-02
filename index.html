@@ -3,20 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>practice</title>
   <style>
- 
-    h1{
-      color:darkblue;
-      padding:20px;
-      border:5px solid black;
-      margin:30px;
+    *{padding:0;
+    margin:0;
+    box-sizing:border-box;}
 
+    body{
+      background-color:#1a1a1a;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-family:sans-serif;
+
+    }
+    .card{
+  
+      background-color:#dad8d8;
+      border-radius: 10px;
+      padding:30px;
+      width:300px;
+    }
+    .card h1{
+      text-align: center;
+      color: rgb(63, 6, 232);
+      margin-bottom: 20px;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+      /* gap:20px; */
+    }
+    input{
+      margin-bottom:15px;
+      padding:10px;
+      border:none;
+      border-radius:5px;
+      font-size:16px;
+      background-color:#ebe5e5;
+    }
+    button{
+      background-color: rgb(63, 6, 232);
+      color:#fff;
+      padding:10px;
+      border:none;
+      border-radius:5px;
+      font-size:16px;
+      cursor:pointer;
+
+    }
+    button:hover{
+      background-color: rgb(43, 3, 157);
     }
   </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quae consequuntur, quisquam non omnis incidunt perferendis quo eaque id, dolorem, autem obcaecati soluta in deserunt ad similique libero! Accusamus, eveniet?</p>
+  <div class="card">
+    <h1>Login</h1>
+    <form>
+      <input type="email" id="email" name="email" placeholder="Email" required />
+      <input type="password" id="password" name="password" placeholder="Password" required />
+      <button class="submit">Login</button>
+    </form>
+  </div>
 </body>
 </html>
