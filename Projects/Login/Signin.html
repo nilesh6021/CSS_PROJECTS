@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <div class="login-wrapper">
+        <div class="login-side">
+
+            <div class="my-form__wrapper">
+                  <div class="login-welcome-row">
+                        <h1>Welcome back &#x1F44F;</h1>
+                        <p>Please enter your details!</p>
+                  </div>
+                  <form class="my-form">
+                    <div class="social-row">
+                        <a href="#" title="Use Google">
+                            <img src="google.png" alt="Google">
+                            login in with Google
+                        </a>
+                        <a href="#" title="Use Apple">
+                            <img src="apple.png" class="apple" alt="apple">
+                            login in with Apple
+                        </a>
+
+                    </div>
+                    <div class="divider">
+                            <div class="divider-line"></div>
+                            Or
+                            <div class="divider-line"></div>
+                    </div>
+                    <div class="text-field">
+                        <lable for="email">Email:</lable>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <img src="./email icon.png" alt="email icon" class="email"  title="Email Icon">
+                    </div>
+                    <div class="text-field">
+                        <lable for="password">Password:</lable>
+                        <input type="password" id="password" name="password" placeholder="Your Passworder"
+                        title="Minimum 6 characters at 
+                                    least 1 Alphabet and 1 Number"
+                                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                                required>
+                        <img src="./password icon.png" alt="password icon" class="lock" title="Password Icon">
+                    </div>
+                    <input type="submit" value="Login" class="my-form__button">
+                    <div class="my-form__actions">
+                            <div class="my-form__row">
+                                <span>Did you forget your password?</span>
+                                <a href="#" title="Reset Password">
+                                    Reset Password
+                                </a>
+                            </div>
+                            <div class="my-form__signup">
+                                <a href="#" title="Create Account">
+                                    Create Account
+                                </a>
+                            </div>
+                        </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

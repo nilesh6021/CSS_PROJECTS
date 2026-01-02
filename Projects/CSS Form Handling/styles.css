@@ -58,7 +58,7 @@ h1{
 label{
     font-weight: 500;
     color:#374151;
-    font-size: 20px;
+    font-size: 15px;
 }
 .required{
     color:#f00909;
@@ -90,7 +90,7 @@ input:focus{border-color:#4f48e5; box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);}
 input:valid:not(:placeholder-shown){border-color: #059669;}
 input:invalid:not(:focus):not(:placeholder-shown) { border-color: #dc2626; }
 
-.error-massage{
+.error-message{
     color: #dc2626;
     font-size: 14px;
     font-weight: 500;
