@@ -70,7 +70,7 @@
 
     <div class="container">
       <h2>2. Flex Direction: Column</h2>
-      <div class="flex-container" style="flex-direction: column">
+      <div class="flex-container" style="flex-direction:column">
         <div class="circle pastel-1">1</div>
         <div class="circle pastel-2">2</div>
         <div class="circle pastel-3">3</div>
@@ -170,5 +170,33 @@
         <div class="circle pastel-5">5</div>
       </div>
     </div>
+    <div class="container">
+      <h2>10. Nested Flex Containers</h2>
+      <div class="flex-container" style="flex-direction: column; height: auto">
+        <div
+          class="flex-container"
+          style="justify-content: space-around; margin-bottom: 10px"
+        >
+          <div class="circle pastel-1">A</div>
+          <div class="circle pastel-2">B</div>
+          <div class="circle pastel-3">C</div>
+        </div>
+        <div
+          class="flex-container"
+          style="justify-content: space-between"
+        >
+          <div class="circle pastel-4">D</div>
+          <div class="circle pastel-5">E</div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Conclusion</h2>
+      <p>
+        This demo showcased various Flexbox properties and their effects on
+        layout. Experiment with these properties to create responsive and
+        flexible web designs!
+      </p>
+    </div>  
   </body>
 </html>
